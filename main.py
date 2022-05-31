@@ -6,6 +6,9 @@ print('GAME RULES\n1. Rock beats Scissors \n2. Scissors beats Paper \n3. Paper b
 play = True
 while play:
     user_choice = input('Enter your choice: ').upper()
+    if user_choice != "R" and "P" and "S":
+        print('Invalid choice. Please try again')
+        continue
     if user_choice == 'q':
         print('Thank you for playing')
         play = False
